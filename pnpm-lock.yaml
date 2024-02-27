@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@nostr-dev-kit/ndk-svelte-components':
+        specifier: ^2.2.7
+        version: 2.2.7(svelte@4.2.8)
     devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
@@ -117,6 +121,9 @@ importers:
       markdown-it-wikilinks:
         specifier: ^1.4.0
         version: 1.4.0
+      mode-watcher:
+        specifier: ^0.2.1
+        version: 0.2.1(svelte@4.2.8)
       nostr-tools:
         specifier: ^2.2.1
         version: 2.2.1(typescript@5.3.3)
@@ -3280,6 +3287,58 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.16.0
+
+  /@nostr-dev-kit/ndk-svelte-components@2.2.7(svelte@4.2.8):
+    resolution: {integrity: sha512-Gr+QbvOiJUTRWmuTAsZDbLFDLif+1JSeieOFQeA/bSXdjF/zn78GrehWbos0Et0QfTwHCuFcrNaZLCy05Q4LpA==}
+    peerDependencies:
+      svelte: ^4.2.0
+    dependencies:
+      '@nostr-dev-kit/ndk': 2.5.0
+      classnames: 2.5.1
+      lucide-svelte: 0.279.0(svelte@4.2.8)
+      marked: 9.1.6
+      marked-gfm-heading-id: 3.1.3(marked@9.1.6)
+      marked-mangle: 1.1.7(marked@9.1.6)
+      nostr-tools: 1.17.0(typescript@5.3.3)
+      ramda: 0.29.1
+      rehype-autolink-headings: 7.1.0
+      rehype-slug: 6.0.0
+      sanitize-html: 2.11.0
+      svelte: 4.2.8
+      svelte-preprocess: 5.1.1(@babel/core@7.23.9)(postcss@8.4.33)(svelte@4.2.8)(typescript@5.3.3)
+      svelte-time: 0.8.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - coffeescript
+      - less
+      - postcss
+      - postcss-load-config
+      - pug
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - typescript
+    dev: false
+
+  /@nostr-dev-kit/ndk@2.5.0:
+    resolution: {integrity: sha512-A2nRgjjLScDhGZGPWx8xUIJM66dJWScdWQoCn/tI1Gtwpple+C2Jp7C9t3mb0oF3bwd2nsV6qwS//wdrH8QvYQ==}
+    dependencies:
+      '@noble/hashes': 1.3.3
+      '@noble/secp256k1': 2.0.0
+      '@scure/base': 1.1.5
+      debug: 4.3.4
+      light-bolt11-decoder: 3.0.0
+      node-fetch: 3.3.2
+      nostr-tools: 1.17.0(typescript@5.3.3)
+      tseep: 1.2.1
+      typescript-lru-cache: 2.0.0
+      utf8-buffer: 1.0.0
+      websocket-polyfill: 0.0.3
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
+    dev: false
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -10924,6 +10983,14 @@ packages:
       pkg-types: 1.0.3
       ufo: 1.3.2
     dev: true
+
+  /mode-watcher@0.2.1(svelte@4.2.8):
+    resolution: {integrity: sha512-HLmJgG5kmJCFR/+rcG2te54HjIxqk7BTAsFnsygZR5hcOYlhLEJQ0V8rh1axv2JQIbOAZs1yPlUBSpVATRFtUw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.8
+    dev: false
 
   /mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
