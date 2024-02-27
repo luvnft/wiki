@@ -1,4 +1,4 @@
-# Wikifreedia
+# LUV NFT Wiki
 
 An experimental wikipedia-style client for nostr
 
